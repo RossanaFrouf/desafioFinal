@@ -1,10 +1,10 @@
-import styled from "styled-components";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 import {HeaderStyle, StyleLink, Ul, Li} from "./style";
 
 export default function Header() {
   return (
-    <header>
+    <HeaderStyle>
       <img src="src\assets\images\logo.png" alt="logomarca" />
       <nav>
         <Ul>
@@ -19,6 +19,6 @@ export default function Header() {
                 </Li>
         </Ul>
       </nav>
-    </header>
+    </HeaderStyle>
 );
 }
