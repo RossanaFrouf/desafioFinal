@@ -17,6 +17,9 @@ export default function Header() {
                 <Li>
                     <StyleLink to="/sobre">Sobre</StyleLink>
                 </Li>
+                <Li>
+                    <StyleLink to="/contato">Contato</StyleLink>
+                </Li>
         </Ul>
       </nav>
     </HeaderStyle>

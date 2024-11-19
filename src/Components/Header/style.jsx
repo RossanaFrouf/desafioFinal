@@ -5,6 +5,8 @@ export const HeaderStyle = styled.header`
 display: flex;
 justify-content: space-between;
 align-items: center;
+margin: 40px;
+
 
 `
 export const StyleLink = styled(Link)`
@@ -28,5 +30,5 @@ list-style: none;
 export const Li = styled.li`
 font-family: "Poppins", sans-serif;
 font-weight: 400;
-font-size: 1.5rem;
+font-size: 1rem;
 `
