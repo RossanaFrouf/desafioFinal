@@ -5,6 +5,7 @@ import Novidades from "./Components/Novidades/Novidades";
 import Sobre from "./Components/Sobre/Sobre";
 import Contato from "./Components/Contato/Contato";
 
+
 export default function App() {
   return (
     <>
