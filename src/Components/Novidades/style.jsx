@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-background-color: #1E3932;
+background-color: #1E3932; 
 color: white;
 font-family: "Poppins", sans-serif;
-padding: 80px 100px;
+padding: 100px; 
 `
 
 export const H2 = styled.h2 `
@@ -16,7 +16,7 @@ export const Img = styled.img `
 display: flex;
 margin-left: 50%;
 position: relative;
-bottom: 200px;
+bottom: 220px;
 
 `
 
@@ -29,9 +29,6 @@ height: 5vh;
 export const P = styled.p `
 width: 26vw;
 `
-
-
-
 
 export const Button = styled.button`
 background-color: #037143;
