@@ -6,8 +6,10 @@ Projeto final do curso Vai na Web que imita uma página da Starbucks onde foi ut
 
 
 ## 🚀 Tecnologias:
+- Vue
 - JavaScript
 - HTML
+- Styled-Components
 - Git e Github
 - Figma
 
