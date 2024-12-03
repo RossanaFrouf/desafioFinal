@@ -6,7 +6,7 @@ Projeto final do curso Vai na Web que imita uma página da Starbucks onde foi ut
 
 
 ## 🚀 Tecnologias:
-- Vue
+- React
 - JavaScript
 - HTML
 - Styled-Components
