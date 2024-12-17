@@ -1,6 +1,27 @@
+import copoLaranja from "../../assets/images/copoLaranja.png";
+import copoAmarelo from "../../assets/images/copoAmarelo.png";
+import copoVermelho from "../../assets/images/copoVermelho.png";
+import copoPequenoLaranja from "../../assets/images/copoPequenoLaranja.png";
+import copoPequenoAmarelo from "../../assets/images/copoPequenoAmarelo.png";
+import copoPequenoVermelho from "../../assets/images/copoPequenoVermelho.png";
+import elipseVerde from "../../assets/images/elipseVerde.png";
+import elipseAmarelo from "../../assets/images/elipseAmarelo.png";
+import elipseVermelho from "../../assets/images/elipseVermelho.png";
+import { useState } from "react";
 import {MainStyle,  H2, Span, P, Button} from "./style";
+import { use } from "react";
+
+
 
 export default function Home() {
+
+    const [color, setColor] = useState("#ffffff")
+    const [imgUrl, setImgUrl] = useState() 
+    const [imgCopo, setImgCopo] = useState() 
+    const trocarImagem = () => {
+        setColor, setImgCopo, setImgUrl(!copo)
+    }
+
     return (
             <MainStyle>
                 <section>
@@ -11,18 +32,22 @@ export default function Home() {
                     <Button>SAIBA MAIS</Button>
                 </section>
                 <div>
-                    <img src="https://github.com/mariaccarolina/desafioSurpresa/blob/main/src/assets/images/laranja.png?raw=true" alt="copo laranja pequeno" />
-                    <img src="https://github.com/mariaccarolina/desafioSurpresa/blob/main/src/assets/images/vermelho.png?raw=true" alt="copo vermelho pequeno" />
-                    <img src="https://github.com/mariaccarolina/desafioSurpresa/blob/main/src/assets/images/amarelo.png?raw=true" alt="copo amarelo pequeno" />
+
+                <button onClick={  () => {setImgCopo ("https://raw.githubusercontent.com/mariaccarolina/starbucks/refs/heads/main/src/assets/laranja2x.png"); setColor("#037143"); setImgUrl("https://raw.githubusercontent.com/mariaccarolina/starbucks/refs/heads/main/src/assets/laranja.png")}}> </button>
+
+                <button onClick={ () => {setImgCopo("https://raw.githubusercontent.com/mariaccarolina/starbugsNoite/refs/heads/main/src/assets/images/amarelo2x%201.png");  setColor("#DECD13"); setImgUrl("https://raw.githubusercontent.com/mariaccarolina/starbucks/refs/heads/main/src/assets/amarelo.png")}}> </button>
+
+                <button onClick={  () => {setImgCopo("https://raw.githubusercontent.com/mariaccarolina/starbucks/refs/heads/main/src/assets/vermelho2x.png"); setColor("#97090C"); setImgUrl("https://raw.githubusercontent.com/mariaccarolina/starbugsNoite/refs/heads/main/src/assets/images/vermelho%201.png")}}> </button>
+            
+                
+                <div style={{height: "100px", width: "100px", backgroundColor: color }}>
+
+
                 </div>
-                <section>
-                <img
-                    src="https://github.com/mariaccarolina/desafioSurpresa/blob/main/src/assets/images/laranja2x.png?raw=true"
-                    alt="Copo com bebida laranja"/>
-                <img
-                    src="https://github.com/mariaccarolina/desafioSurpresa/blob/main/src/assets/images/Ellipse%201.png?raw=true"
-                    alt="Elipse verde"/>
-                </section>
+                  <img src={imgUrl} alt="" />
+                  <img src={imgCopo} alt=""/>
+                </div>
+               
             </MainStyle>
     );
 }

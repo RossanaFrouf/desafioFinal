@@ -13,4 +13,4 @@ export default function Sobre () {
             <Img src="src/assets/images/imgSobre.png" alt="Imagem de grão de café" />    
         </Section>
     )
-}
+}   

@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+
 import {HeaderStyle, StyleLink, Ul, Li} from "./style";
 
 export default function Header() {
   return (
     <HeaderStyle>
-      <img src="src\assets\images\logo.png" alt="logomarca" />
+      <img src="https://github.com/mariaccarolina/starbucks/blob/main/src/assets/logo.png?raw=true" alt="logomarca" />
       <nav>
         <Ul>
                 <Li>
